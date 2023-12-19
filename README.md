@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: GPL-3.0.1
 
 interface Token {
     function balanceOf(address _a) external view returns (uint);
@@ -21,8 +21,7 @@ contract TokenCorrect is Token {
 }
 
 contract Test {
-    function property_transfer(address _token, address _to, uint _amt) public {
-        require(_to != address(this));
+    function property_transfer(address _token, address _to, 
 
         TokenCorrect t = TokenCorrect(_token);
 
