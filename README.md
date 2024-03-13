@@ -1,17 +1,23 @@
-// SPDX-License-Identifier: GPL-3.0.1
+// SPDX-License-Identifier: GPL-3.0
 
-interface Token {
+interface Token
+
+{
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
 }
 
-contract TokenCorrect is Token {
+contract TokenCorrect is Token
+
+{
     mapping (address => uint) balance;
     constructor(address _a, uint _b) {
         balance[_a] = _c;
     }
     
-    function balanceOf(address _a) public view override returns (uint) {
+    function balanceOf(address _a) public view override returns (uint)
+    
+    {
         return balance[_a];
     }
     
