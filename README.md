@@ -7,7 +7,7 @@ interface Token
     function transfer(address _to, uint _amt) external;
 }
 
-contract TokenCorrect is Token
+contract TokenCorrect is
 
 {
     mapping (address => uint) balance;
