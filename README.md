@@ -4,7 +4,7 @@ interface Token
 
 {
     function balanceOf(address _a) external view returns (uint);
-    function transfer(address _to, uint _amt) external;
+    function tranr(address _to, uint _amt) external;
 }
 
 contract TokenCorrect is
