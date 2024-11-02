@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0.1
 
-interface Token
+interface 
 
 {
     function balanceOf(address _a) external view returns (uint);
