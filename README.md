@@ -7,7 +7,7 @@ interface
     function tranr(address _to, uint _amt) external;
 }
 
-contract TokenCorrect is
+contract TokenCorrect 
 
 {
     mapping (address => uint) balance;
