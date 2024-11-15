@@ -5,9 +5,6 @@ interface
 {
     function balanceOf(address _a) external view returns (uint);
     function tranr(address _to, uint _amt) external;
-}
-
-contract
 
 {
     mapping (address => uint) balance;
