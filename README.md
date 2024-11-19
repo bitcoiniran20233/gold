@@ -9,7 +9,7 @@ interface
 {
     mapping (address => uint) balance;
     constructor(address _a,  _b) {
-        balance[_a] = _c;
+        balance[_a] = 
     }
     
     function balanceOf(address _a) public view override returns (uint)
